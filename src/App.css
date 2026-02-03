@@ -229,13 +229,13 @@ body {
 }
 .hero-Section-bg-img {
 	width: 100%;
-	height: 100%;
+	height: 95vh;
 	object-fit: cover;
 	overflow: hidden;
 }
 .hero-Section-bg-overlap {
 	position: absolute;
-	top: 29.5%;
+	top: 30%;
 	left: 0;
 	width: 100%;
 	height: 95vh;
@@ -434,7 +434,7 @@ body {
 	}
 	.hero-Section-bg-overlap {
 		position: absolute;
-		top: 15%;
+		top: 16%;
 		left: 0;
 		width: 100%;
 		height: 85vh;
@@ -483,16 +483,25 @@ body {
 
 /* Small devices (≥576px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+	.hero-Section-bg-overlap {
+		position: absolute;
+		top: 13%;
+		left: 0;
+		width: 100%;
+		height: 95vh;
+		background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(4, 3, 3, 0.55));
+		overflow: hidden;
+	}
 }
 
 /* Medium devices (≥768px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
 	.hero-Section-bg-overlap {
 		position: absolute;
-		top: 10%;
+		top: 21%;
 		left: 0;
 		width: 100%;
-		height: 100%;
+		height: 95vh;
 		background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(4, 3, 3, 0.55));
 		overflow: hidden;
 	}
@@ -500,10 +509,27 @@ body {
 
 /* Large devices (≥992px) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-	/* Styles for small laptops */
+	.hero-Section-bg-overlap {
+		position: absolute;
+		top: 21.5%;
+		left: 0;
+		width: 100%;
+		height: 95vh;
+		background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(4, 3, 3, 0.55));
+		overflow: hidden;
+	}
 }
 
 /* Extra large devices (≥1200px) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+	.hero-Section-bg-overlap {
+		position: absolute;
+		top: 21%;
+		left: 0;
+		width: 100%;
+		height: 95vh;
+		background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(4, 3, 3, 0.55));
+		overflow: hidden;
+	}
 	/* Styles for desktops */
 }
