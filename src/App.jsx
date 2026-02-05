@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import "./App.css";
-import WellcomeMessage from "./components/wellcomeMessage";
 import { IoCallSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { GiTeacher } from "react-icons/gi";
@@ -10,6 +9,7 @@ import { GiSpellBook } from "react-icons/gi";
 import { FaUniversity } from "react-icons/fa";
 import { HiMenu } from "react-icons/hi";
 import { NavLink, Route, Routes } from "react-router-dom";
+import WellcomeMessage from "./Components/WellcomeMessage";
 const App = () => {
 	const [openAbout, setIsOpenAbout] = useState(false);
 	const [openProgram, setIsOpenProgram] = useState(false);
