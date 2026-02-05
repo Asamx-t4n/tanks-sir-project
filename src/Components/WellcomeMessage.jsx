@@ -44,15 +44,18 @@ const WellcomeMessage = () => {
 						<div className="row">Dashain</div>
 						<div className="row">result</div>
 						<div className="row">holiday</div>
+						<div className="row">holiday</div>
 					</div>
 					<div className="col-md-4 col-xsm-6 dateMain-div">
 						<h3 className="date-caption">Date</h3>
 						<div className="row">2083/06/14</div>
 						<div className="row">2083/06/08</div>
 						<div className="row">2083/06/14</div>
+						<div className="row">2083/06/14</div>
 					</div>
 					<div className="col-md-4   rolesMain-div">
 						<h3 className="roles-caption">Roles</h3>
+						<div className="row">admin</div>
 						<div className="row">admin</div>
 						<div className="row">admin</div>
 						<div className="row">admin</div>
