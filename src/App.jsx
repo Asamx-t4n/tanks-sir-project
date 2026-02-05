@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./App.css";
+import WellcomeMessage from "./components/wellcomeMessage";
 import { IoCallSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { GiTeacher } from "react-icons/gi";
@@ -176,8 +177,13 @@ const App = () => {
 					</div>
 				</div>
 			</div>
-			{/* ROUTES */}
-			<Routes>{/* <Route path="/" element={<Home />} /> */}</Routes>
+			<div className="wellcomeMessage-div">
+				<WellcomeMessage />
+			</div>
+			<div>
+				{/* ROUTES */}
+				<Routes>{/* <Route path="/" element={<Home />} /> */}</Routes>
+			</div>
 		</div>
 	);
 };

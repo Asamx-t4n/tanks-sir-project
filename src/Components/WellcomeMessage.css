@@ -1,0 +1,162 @@
+/* * {
+	border: 1px solid red;
+} */
+.message-container {
+	padding: 0.4rem;
+	height: 100vh;
+	width: 100%;
+}
+.wellcome-Student-img {
+	margin-left: 2rem;
+	padding: 1rem;
+	height: 15rem;
+	width: 80%;
+	object-fit: cover;
+	object-position: center;
+	border: 2px solid black;
+}
+.slide-left-img.show {
+	transform: translateX(0px);
+	opacity: 1;
+}
+.wellcome-Student-img-div {
+	margin-top: 4rem;
+	transform: translateX(-50px);
+	opacity: 0;
+	transition:
+		transform 0.9s ease,
+		opacity 0.6s ease;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.wellcome-Student-caption-div {
+	margin-top: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.wellcome-Topic {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: brown;
+}
+.wellcome-Student-caption {
+	width: 30rem;
+	opacity: 0;
+	transform: translateX(-50px);
+	height: 10rem;
+	transition:
+		transform 0.9s ease,
+		opacity 0.3s ease;
+}
+
+.slide-Left.show {
+	transform: translateX(0px);
+	opacity: 1;
+}
+
+/* RECENT NEWS */
+.recentNews-container {
+	margin-top: 2rem;
+	padding: 1rem;
+}
+.noticeMain-div,
+.dateMain-div,
+.rolesMain-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 2px solid brown;
+}
+.notice-caption,
+.date-caption,
+.roles-caption {
+	font-size: 1.5rem;
+}
+.recentNews-caption {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	color: brown;
+	font-weight: 800;
+}
+@media (max-width: 576px) {
+	.wellcome-Student-img-div {
+		margin-top: 2rem;
+		transform: translateX(-50px);
+		opacity: 0;
+		transition:
+			transform 0.9s ease,
+			opacity 0.6s ease;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.wellcome-Student-caption-div {
+		margin-top: 1rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.wellcome-Student-img {
+		margin-right: 2rem;
+		margin-left: 2rem;
+		height: 15rem;
+		width: 100%;
+		object-fit: cover;
+		object-position: center;
+		border: 2px solid black;
+	}
+	.wellcome-Student-caption {
+		font-size: 0.8rem;
+		width: 30rem;
+		opacity: 0;
+		transform: translateX(-50px);
+		height: 10rem;
+		transition:
+			transform 0.9s ease,
+			opacity 0.3s ease;
+	}
+	/* RECENT NEWS */
+	.rolesMain-div {
+		display: none;
+	}
+	.recentNews-container {
+		margin-top: 2rem;
+		padding: 1rem;
+	}
+	.notice-caption,
+	.date-caption,
+	.roles-caption {
+		font-size: 1rem;
+	}
+	.recentNews-caption {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1rem;
+		color: brown;
+		font-weight: 800;
+	}
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 1200px) {
+}
+
+/* @media (max-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 1200px) {
+} */
