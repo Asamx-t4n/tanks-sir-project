@@ -1,0 +1,54 @@
+/* FILTER BUTTONS */
+.gallery-filters {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 25px;
+}
+
+.gallery-filters button {
+	padding: 8px 16px;
+	border: none;
+	background: #eee;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+	font-weight: 500;
+}
+
+.gallery-filters button:hover {
+	background: #007bff;
+	color: #fff;
+}
+
+/* CARD */
+.gallery-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	margin-top: 2rem;
+}
+.Gallery-Button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Gallery-Card-Div {
+	perspective: 1000px;
+}
+.Inline-Gallery-Card {
+	position: relative;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+.Gallery-Card-Div:hover .Inline-Gallery-Card {
+	transform: rotateY(180deg);
+}
+/* RESPONSIVE */
+@media (max-width: 992px) {
+}
+
+@media (max-width: 576px) {
+}

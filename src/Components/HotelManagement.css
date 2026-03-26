@@ -1,0 +1,122 @@
+.Management-div {
+	position: relative;
+	height: 80vh;
+	width: 100%;
+}
+.Management-Video {
+	object-fit: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+	width: 100%;
+}
+/* .ScienceImg-div::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.3));
+} */
+.Science-Caption {
+	position: absolute;
+	top: 35%;
+	left: 45%;
+	color: white;
+	font-weight: 800;
+}
+.science-wrapper {
+	background-color: #f8f9fa;
+}
+
+.section-title {
+	font-size: 32px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	color: brown;
+}
+
+.section-text {
+	padding: 1rem;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	font-size: 0.9rem;
+	color: #555;
+	transition: transform 0.3s ease;
+	cursor: pointer;
+}
+.section-text:hover {
+	transform: translateY(-20px);
+}
+.Collage-provide-img-div {
+	perspective: 800px;
+}
+.Collage-provide-img {
+	transform: rotateY(35deg);
+	transition: 0.5s ease transform;
+	height: 30rem;
+}
+.Collage-provide-img:hover {
+	cursor: pointer;
+	transform: rotateY(0deg);
+}
+.Management-stream-img-div {
+	perspective: 1000px;
+}
+
+.Management-stream-img {
+	max-height: 400px;
+	object-fit: cover;
+	transform: rotateY(-35deg);
+	transition: 0.5s ease transform;
+}
+.Management-stream-img:hover {
+	cursor: pointer;
+	transform: rotateY(0deg);
+}
+.science-info-wrapper {
+	background-color: #f8f9fa;
+}
+
+.faq-item {
+	padding: 1rem;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	margin-bottom: 40px;
+	transition: transform 0.3s ease;
+	cursor: pointer;
+}
+.faq-item:hover {
+	transform: translateY(-20px);
+}
+
+.faq-question {
+	font-size: 24px;
+	font-weight: 600;
+	color: #0d6efd;
+	margin-bottom: 15px;
+}
+
+.faq-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+.faq-list li::before {
+	content: "⇒"; /* Arrow */
+	margin-right: 10px;
+	color: #0d6efd;
+	font-weight: bold;
+}
+
+.faq-list li {
+	font-size: 18px;
+	line-height: 1.7;
+	color: #555;
+	margin-bottom: 8px;
+}
+
+img {
+	max-height: 400px;
+	object-fit: cover;
+}

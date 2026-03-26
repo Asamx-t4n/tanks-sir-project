@@ -1,0 +1,9 @@
+.OurTeams-container {
+	margin-top: 1rem;
+}
+.OurTeams-Cards {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1rem;
+}

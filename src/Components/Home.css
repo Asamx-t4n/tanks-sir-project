@@ -1,0 +1,140 @@
+/* HERO-SECTION */
+.container-heroSection {
+	overflow: visible;
+	width: 100%;
+	min-height: 95vh;
+}
+.hero-Section-bg-img {
+	width: 100%;
+	height: 95vh;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+.hero-Section-Caption {
+	font-weight: 400;
+	font-size: 2.5rem;
+	font-family: "Signika Negative", sans-serif;
+	color: white;
+}
+.hero-Section-Caption-div {
+	width: 50%;
+	position: absolute;
+	top: 50%;
+	left: 10%;
+}
+.hero-section-button {
+	position: relative;
+	z-index: 1;
+	color: white;
+	background-color: #7d2926;
+	overflow: hidden;
+}
+.hero-section-button::before {
+	content: "";
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 0%;
+	height: 100%;
+	background-color: blue;
+	z-index: -1;
+	transition: width 0.5s ease;
+}
+.hero-section-button:hover::before {
+	width: 100%;
+}
+.hero-Section-box {
+	position: absolute;
+	top: 30%;
+	left: 75%;
+}
+.hero-section-box1,
+.hero-section-box2,
+.hero-section-box3,
+.hero-section-box4 {
+	cursor: pointer;
+	background-color: whitesmoke;
+	color: white;
+	height: 5rem;
+	width: 7rem;
+	margin-bottom: 1rem;
+	transition: all 0.4s ease;
+}
+.hero-section-box1:hover {
+	transform: scale(0.8);
+}
+.hero-section-box2:hover {
+	transform: scale(0.8);
+}
+.hero-section-box3:hover {
+	transform: scale(0.8);
+}
+.hero-section-box4:hover {
+	transform: scale(0.8);
+}
+.hero-section-box1-icon-div,
+.hero-section-box2-icon-div,
+.hero-section-box3-icon-div,
+.hero-section-box4-icon-div {
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+}
+.hero-section-box1-caption,
+.hero-section-box2-caption,
+.hero-section-box3-caption,
+.hero-section-box4-caption {
+	font-weight: 800;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.6rem;
+}
+
+@media (max-width: 576px) {
+	/* HERO-SECTION-BOX */
+	.hero-Section-box {
+		position: absolute;
+		top: 18%;
+		left: 60%;
+	}
+
+	.hero-Section-Caption {
+		font-weight: 400;
+		font-size: 1rem;
+		font-family: "Signika Negative", sans-serif;
+		color: white;
+	}
+	.hero-Section-Caption-div {
+		width: 50%;
+		position: absolute;
+		top: 30%;
+		left: 5%;
+	}
+	/* .container-heroSection {
+		overflow: hidden;
+		width: 100%;
+		height: 100vh;
+	} */
+	.small-size-contact-button {
+		display: block;
+	}
+}
+
+@media (min-width: 1024px) {
+}
+@media (min-width: 1200px) {
+	.hero-Section-bg-overlap {
+		position: absolute;
+		top: 24%;
+		left: 0;
+		width: 100%;
+		height: 95vh;
+		background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(4, 3, 3, 0.55));
+		overflow: hidden;
+	}
+}

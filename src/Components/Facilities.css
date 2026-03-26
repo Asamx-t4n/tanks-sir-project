@@ -1,0 +1,41 @@
+.facilities {
+	background: #f9fafb;
+}
+
+.facilities-title {
+	text-align: center;
+	font-size: 2.5rem;
+	margin-bottom: 40px;
+}
+
+.Facilities-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	object-fit: cover;
+	height: 10rem;
+	width: 100%;
+}
+
+.facility-card {
+	background: #fff;
+	padding: 25px;
+	border-radius: 16px;
+	transition: 0.3s ease;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.facility-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.facility-card h3 {
+	margin-bottom: 10px;
+	font-size: 1.3rem;
+}
+
+.facility-card p {
+	font-size: 0.95rem;
+	color: #555;
+}

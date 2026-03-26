@@ -36,29 +36,29 @@ const WellcomeMessage = () => {
 					</div>
 				</div>
 			</div>
-			<div className="recentNews-container">
+			{/* <div className="recentNews-container">
 				<h1 className="recentNews-caption">Recent News</h1>
-				<div className="row notice-date ">
-					<div className="col-md-4 col-sm-6 noticeMain-div">
+				<div className="row">
+					<div className="col-6 col-md-4 noticeMain-div">
 						<h3 className="notice-caption">Notice</h3>
 						<div className="row">Dashain</div>
 						<div className="row">result</div>
 						<div className="row">holiday</div>
 					</div>
-					<div className="col-md-4 col-xsm-6 dateMain-div">
+					<div className="col-6 col-md-4  dateMain-div">
 						<h3 className="date-caption">Date</h3>
 						<div className="row">2083/06/14</div>
 						<div className="row">2083/06/08</div>
 						<div className="row">2083/06/14</div>
 					</div>
-					<div className="col-md-4   rolesMain-div">
+					<div className="col-md-4 d-none d-md-flex  rolesMain-div">
 						<h3 className="roles-caption">Roles</h3>
 						<div className="row">admin</div>
 						<div className="row">admin</div>
 						<div className="row">admin</div>
 					</div>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };

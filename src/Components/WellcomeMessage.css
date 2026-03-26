@@ -3,8 +3,9 @@
 } */
 .message-container {
 	padding: 0.4rem;
-	height: 100vh;
+	height: 80vh;
 	width: 100%;
+	background-color: #f8f9fa;
 }
 .wellcome-Student-img {
 	margin-left: 2rem;
@@ -20,7 +21,7 @@
 	opacity: 1;
 }
 .wellcome-Student-img-div {
-	margin-top: 4rem;
+	margin-top: 6rem;
 	transform: translateX(-50px);
 	opacity: 0;
 	transition:
@@ -32,10 +33,12 @@
 	align-items: center;
 }
 .wellcome-Student-caption-div {
-	margin-top: 4rem;
+	margin-top: 6rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	height: 16rem;
 }
 .wellcome-Topic {
 	display: flex;
@@ -44,6 +47,7 @@
 	color: brown;
 }
 .wellcome-Student-caption {
+	margin-top: -6rem;
 	width: 30rem;
 	opacity: 0;
 	transform: translateX(-50px);
@@ -60,8 +64,8 @@
 
 /* RECENT NEWS */
 .recentNews-container {
-	margin-top: 2rem;
-	padding: 1rem;
+	margin-top: -1rem;
+	padding: 4rem;
 }
 .noticeMain-div,
 .dateMain-div,
@@ -76,6 +80,7 @@
 .date-caption,
 .roles-caption {
 	font-size: 1.5rem;
+	border-bottom: 2px solid brown;
 }
 .recentNews-caption {
 	display: flex;
@@ -85,6 +90,7 @@
 	color: brown;
 	font-weight: 800;
 }
+
 @media (max-width: 576px) {
 	.wellcome-Student-img-div {
 		margin-top: 2rem;

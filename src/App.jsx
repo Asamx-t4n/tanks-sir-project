@@ -3,13 +3,26 @@ import { useState } from "react";
 import "./App.css";
 import { IoCallSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
-import { GiTeacher } from "react-icons/gi";
-import { PiStudentBold } from "react-icons/pi";
-import { GiSpellBook } from "react-icons/gi";
-import { FaUniversity } from "react-icons/fa";
 import { HiMenu } from "react-icons/hi";
 import { NavLink, Route, Routes } from "react-router-dom";
-import WellcomeMessage from "./Components/WellcomeMessage";
+import { FaFacebookF } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa6";
+import { GrYoutube } from "react-icons/gr";
+import { MdWifiCalling } from "react-icons/md";
+import { HiOutlineMail } from "react-icons/hi";
+import { MdLocationOn } from "react-icons/md";
+import Home from "./Components/Home";
+import MissionAndVision from "./Components/MissionAndVision";
+import PrincipalMessage from "./Components/PrincipalMessage";
+import OurTeams from "./Components/OurTeams";
+import Science from "./Components/Science";
+import Management from "./Components/Management";
+import HotelManagement from "./Components/HotelManagement";
+import Facilities from "./Components/Facilities";
+import Gallery from "./Components/Gallery";
+import Career from "./Components/Career";
+import NoticePopUp from "./Components/NoticePopUp";
+import Login from "./Components/Login";
 const App = () => {
 	const [openAbout, setIsOpenAbout] = useState(false);
 	const [openProgram, setIsOpenProgram] = useState(false);
@@ -29,23 +42,35 @@ const App = () => {
 						</email>
 					</div>
 					<div className="col-12 col-md-6 col-sm-12 subNav-Button">
-						<button className="subNav-Contact-button">contact us</button>
+						<button
+							className="subNav-Contact-button"
+							onClick={() => (window.location.href = "tel:+98425108784577")}
+						>
+							Contact Us
+						</button>
 					</div>
 				</nav>
 			</div>
 			{/* NAVBAR */}
 			<nav className="nav-container">
 				<div className="row nav">
-					<div className=" col-3  nav-Logo-Div">
-						<img
-							className="nav-Logo"
-							src="/liberty collage logo.jpeg"
-							alt="collage logo"
-						/>
+					<div className=" col-md-3  nav-Logo-Div">
+						<NavLink className="nav-Menu-About" to="/">
+							<img
+								className="nav-Logo"
+								src="/liberty collage logo.jpeg"
+								alt="collage logo"
+							/>
+						</NavLink>
+						<div>
+							<HiMenu
+								className="navbar-menu-sign"
+								onClick={() => setIsOpenMenu((prev) => !prev)}
+							/>
+						</div>
 					</div>
 					{/* menu */}
-
-					<div className="col-6 ">
+					<div className="col-md-6  ">
 						<div
 							className={`nav-Menu-Div smallSize ${openMenu ? "openSmallMenu" : "closeSmallMenu"}`}
 						>
@@ -56,28 +81,34 @@ const App = () => {
 									setIsOpenAbout((prev) => !prev);
 								}}
 							>
-								<NavLink className="nav-Menu-About" to="/">
-									ABOUT
-								</NavLink>
+								<div className="nav-Menu-About">ABOUT</div>
 							</li>
 
 							<ul
 								className={`nav-dropdown-Menu-about  ${openAbout ? "openAboutMenu" : "closeAboutMenu"}`}
 							>
-								<NavLink className="mission-Vision" to="mission&Vision">
+								<NavLink
+									onClick={() => setIsOpenAbout(false)}
+									className="mission-Vision"
+									to="mission&Vision"
+								>
 									Mission & Vision
 								</NavLink>
 
-								<NavLink className="directorMessage" to="directorMessage">
-									Director Message
-								</NavLink>
-
-								<NavLink className="principleMessage" to="principleMessage">
+								<NavLink
+									onClick={() => setIsOpenAbout(false)}
+									className="principleMessage"
+									to="PrincipalMessage"
+								>
 									princple Message
 								</NavLink>
 
-								<NavLink className="ourTeam" to="ourTeam">
-									Our Team
+								<NavLink
+									onClick={() => setIsOpenAbout(false)}
+									className="ourTeam"
+									to="OurTeam"
+								>
+									Our Teachers
 								</NavLink>
 							</ul>
 
@@ -88,102 +119,139 @@ const App = () => {
 									setIsOpenAbout(false);
 								}}
 							>
-								<NavLink className="nav-Menu-Program" to="/program">
+								<div className="nav-Menu-Program" to="/program">
 									PROGRAM
-								</NavLink>
+								</div>
 							</li>
 							<ul
 								className={`nav-Dropdown-Menu-Program ${openProgram ? "openProgramMenu" : "closeProgramMenu"}`}
 							>
-								<NavLink className="nav-Science" to="/science">
+								<NavLink
+									onClick={() => setIsOpenProgram(false)}
+									className="nav-Science"
+									to="/Science"
+								>
 									SCIENCE
 								</NavLink>
-								<NavLink className="nav-Management" to="/management">
+								<NavLink
+									onClick={() => setIsOpenProgram(false)}
+									className="nav-Management"
+									to="/management"
+								>
 									MANAGEMENT
 								</NavLink>
-								<NavLink className="nav-Hotel-M" to="/hotelManagement">
+								<NavLink
+									onClick={() => setIsOpenProgram(false)}
+									className="nav-Hotel-M"
+									to="/HotelManagement"
+								>
 									HOTELMANAGEMENT
 								</NavLink>
 							</ul>
-							<NavLink className="nav-Menu-Faculties" to="/faculties">
-								FACULTIES
+							<NavLink className="nav-Menu-Faculties" to="/facilities">
+								FACILITIES
 							</NavLink>
-							<NavLink className="nav-Menu-Gallery" to="/gallery">
+							<NavLink className="nav-Menu-Gallery" to="/Gallery">
 								GALLERY
 							</NavLink>
-							<NavLink className="nav-Menu-Notice" to="/notice">
-								NOTICE
+
+							<NavLink className="nav-Menu-Carrer" to="/Career">
+								CAREER
 							</NavLink>
-							<NavLink className="nav-Menu-Carrer" to="/carrer">
-								CARRER
-							</NavLink>
-							<NavLink className="nav-Menu-Login" to="/carrer">
+							<NavLink className="nav-Menu-Login" to="/Login">
 								LOGIN
 							</NavLink>
 						</div>
 					</div>
 
 					{/* MENU */}
-					<div className=" nav-Button-Div col-2 ">
-						<button className="nav-Button">login</button>
-						<div>
-							<HiMenu
-								className="navbar-menu-sign"
-								onClick={() => setIsOpenMenu((prev) => !prev)}
-							/>
-						</div>
+					<div className=" nav-Button-Div col-md-3 col-sm-6">
+						<NavLink className="nav-Menu-Login-md" to="/Login">
+							LOGIN
+						</NavLink>
 					</div>
 				</div>
 			</nav>
-			{/* HERO-SECTION */}
-			<div className="container-heroSection">
-				<img
-					className="hero-Section-bg-img"
-					src="/Collage.jpg"
-					alt="colllage-img"
-				/>
-				<div className="hero-Section-bg-overlap"></div>
-				<div className="hero-Section-Caption-div">
-					<h1 className="hero-Section-Caption">
-						''A GLOBAL ATMOSPHERE AT A REDUCED SCALE''
-					</h1>
-					<button className="hero-section-button">ENROLL NOW</button>
-				</div>
-				<div className="hero-Section-box">
-					<div className="hero-section-box1">
-						<div className="hero-section-box1-icon-div">
-							<GiTeacher />
-						</div>
-						<p className="hero-section-box1-caption">EXPERIENCE 10+</p>
-					</div>
-					<div className="hero-section-box2">
-						<div className="hero-section-box2-icon-div">
-							<PiStudentBold />
-						</div>
-						<p className="hero-section-box2-caption">STUDENT 600+</p>
-					</div>
-
-					<div className="hero-section-box3">
-						<div className="hero-section-box3-icon-div">
-							<GiSpellBook />
-						</div>
-						<p className="hero-section-box3-caption">PROGRAMS 3+</p>
-					</div>
-					<div className="hero-section-box4">
-						<div className="hero-section-box4-icon-div">
-							<FaUniversity />
-						</div>
-						<p className="hero-section-box4-caption">YEAR OF EXPERIENCE 10+</p>
-					</div>
-				</div>
-			</div>
-			<div className="wellcomeMessage-div">
-				<WellcomeMessage />
-			</div>
 			<div>
+				<div className="Notice-PopUp-Div">
+					<NoticePopUp />
+				</div>
 				{/* ROUTES */}
-				<Routes>{/* <Route path="/" element={<Home />} /> */}</Routes>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/mission&Vision" element={<MissionAndVision />} />
+					<Route path="/PrincipalMessage" element={<PrincipalMessage />} />
+					<Route path="/OurTeam" element={<OurTeams />} />
+					<Route path="/Science" element={<Science />} />
+					<Route path="/Management" element={<Management />} />
+					<Route path="/HotelManagement" element={<HotelManagement />} />
+					<Route path="/Facilities" element={<Facilities />} />
+					<Route path="/Gallery" element={<Gallery />} />
+					<Route path="/Career" element={<Career />} />
+					<Route path="/Login" element={<Login />} />
+				</Routes>
 			</div>
+
+			<footer className="footer-container">
+				<div className="row">
+					<div className="col-md-3">
+						<div className="footer-logo-div">
+							<img
+								className="footer-logo"
+								src="liberty collage logo.jpeg"
+								alt="collageLogo"
+							/>
+						</div>
+						<div className="footer-media-links-div">
+							<h1 className="footer-caption-follow">Follow</h1>
+							<div className="footer-icons-div">
+								<FaFacebookF className="footer-icons1" />
+								<FaTiktok className="footer-icons2" />
+								<GrYoutube className="footer-icons3" />
+							</div>
+						</div>
+					</div>
+					<div className="col-md-3">
+						<h3 className="footer-UseFull-Links-Caption">Usefull Liks</h3>
+						<div className="footer-UseFull-Links-Group">
+							<p className="footer-About">About</p>
+							<p className="footer-Program">Program</p>
+							<p className="footer-Faculties">Faculties</p>
+							<p className="footer-Gallery">Gallery</p>
+						</div>
+					</div>
+					<div className="col-md-3">
+						<h3 className="footer-Caption-Contact">Contact</h3>
+						<div className="footer-Contact-List-Div">
+							<p className="footer-Contact-Num">
+								<MdWifiCalling />
+								9706375558/023691317
+							</p>
+							<p className="footer-Contact-Email">
+								<HiOutlineMail />
+								info@libertysscollege@gamil.com
+							</p>
+							<p className="footer-Contact-Location">
+								<MdLocationOn />
+								Purano Bhadrapur Road Birtamode-5
+							</p>
+						</div>
+					</div>
+					<div className="col-md-3">
+						<h3 className="footer-Map-Caption">Map</h3>
+						<div className="footer-map">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d904.6077543940204!2d87.9913553947217!3d26.639652047496387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1sen!2snp!4v1770794992232!5m2!1sen!2snp"
+								style={{ border: 0 }}
+								allowFullScreen=""
+								loading="lazy"
+								referrerPolicy="no-referrer-when-downgrade"
+								title="location-map"
+							></iframe>
+						</div>
+					</div>
+				</div>
+			</footer>
 		</div>
 	);
 };

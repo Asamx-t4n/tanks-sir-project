@@ -1,0 +1,123 @@
+.Card {
+	height: 20rem;
+	width: 15rem;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+.GalleryCard {
+	position: relative;
+	perspective: 1000px;
+	height: 12rem;
+	width: 15rem;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+	cursor: pointer;
+}
+.Front-Card {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	transition: transform 0.9s ease;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+}
+.Back-Card {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 2rem;
+	left: 0rem;
+	transform: rotateY(180deg); /* ← must be here */
+	backface-visibility: hidden;
+}
+
+.GalleryCard:hover .Front-Card {
+	transform: rotateY(180deg);
+}
+.GalleryCard:hover .Back-Card {
+	transform: rotateY(0deg);
+}
+.Card:hover {
+	transform: translateY(-10px);
+}
+.card-Img-Div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Card-Desc {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.8rem;
+	font-weight: 600;
+	width: 100%;
+}
+
+.card-Img {
+	border-radius: 50%;
+	height: 8rem;
+	width: 10rem;
+}
+.Gallery-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	object-fit: cover;
+	border-radius: 15%;
+	height: 12rem;
+	width: 100%;
+}
+.card-name {
+	margin-top: 0.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: brown;
+	font-size: 0.9rem;
+	font-weight: 600;
+}
+.Card-Eductaion {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: brown;
+	font-size: 0.7rem;
+	font-weight: 600;
+}
+.Card-Button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: brown;
+	font-size: 0.7rem;
+	font-weight: 600;
+}
+.card-formerStudent {
+	margin-top: -1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 0.7rem;
+}
+
+.card-Description {
+	margin-top: -1rem;
+	font-size: 0.8rem;
+	padding: 1rem;
+}
+.card-Description-Div {
+	margin-left: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}

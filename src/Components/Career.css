@@ -1,0 +1,62 @@
+.container {
+	padding: 40px 0;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 20px;
+}
+
+.card {
+	padding: 20px;
+	border-radius: 12px;
+	background: #f5f5f5;
+	text-align: center;
+	transition: 0.3s;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+}
+
+.career-hero {
+	padding: 80px 0;
+	background: #0d6efd;
+	color: white;
+}
+
+.stats {
+	background: brown;
+	color: white;
+	padding: 50px 0;
+}
+
+.career-cta {
+	padding: 60px 0;
+	background: #0d6efd;
+	color: white;
+}
+
+.btn {
+	padding: 10px 20px;
+	margin: 10px;
+	border: none;
+	cursor: pointer;
+	border-radius: 6px;
+}
+
+.btn-primary {
+	background: white;
+	color: #0d6efd;
+}
+
+.btn-outline {
+	border: 1px solid white;
+	background: transparent;
+	color: white;
+}

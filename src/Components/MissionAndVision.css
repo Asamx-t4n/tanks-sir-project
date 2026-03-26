@@ -1,0 +1,64 @@
+.mission-vision-section {
+	background-color: #f8f9fa;
+	padding: 4rem 1rem;
+}
+
+.mission-vision-container {
+	max-width: 1100px;
+	margin: auto;
+	text-align: center;
+}
+
+.section-title {
+	font-size: 2.5rem;
+	color: #4b2e2e; /* brown */
+	margin-bottom: 3rem;
+	border-radius: 5px;
+	position: relative;
+}
+
+.card-wrapper {
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.mv-card {
+	background: #ffffff;
+	padding: 2rem;
+	border-radius: 12px;
+	width: 450px;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+	transition: 0.3s ease;
+}
+
+.mv-card h2 {
+	color: #4b2e2e;
+	margin-bottom: 1rem;
+}
+
+.mv-card p {
+	color: #555;
+	line-height: 1.6;
+}
+
+.mv-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+.mv-btn2 {
+	display: inline-block;
+	margin-top: 1.5rem;
+	padding: 0.7rem 1.5rem;
+	background-color: #4b2e2e; /* brown */
+	color: #fff;
+	text-decoration: none;
+	border-radius: 30px;
+	font-size: 0.9rem;
+	transition: 0.3s ease;
+}
+.mv-btn:hover {
+	background-color: #7b4b3a;
+	transform: translateY(-3px);
+}

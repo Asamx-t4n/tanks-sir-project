@@ -1,0 +1,163 @@
+body {
+	background-color: #ededed;
+}
+
+.our-Program-container {
+	background-color: brown;
+	padding: 1rem;
+}
+
+.Our-Programs-Caption,
+.Trainig-Bootcamp,
+.student-review-Caption {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 800;
+	font-size: 2rem;
+	color: brown;
+}
+
+.our-Program-Science-div,
+.our-Program-Management-div,
+.our-Program-HotelManagement-div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.our-Program-Science-img,
+.our-Program-Management-img,
+.our-Program-HotelManagement-img {
+	width: 100%;
+	height: 10rem;
+	padding: 0.3rem;
+	border-radius: 45%;
+	opacity: 0;
+	transition:
+		transform 0.9s ease,
+		opacity 0.9s ease;
+}
+
+/* Animation directions */
+.our-Program-Science-img {
+	transform: translateX(-50px);
+}
+.our-Program-Management-img {
+	transform: translateY(-50px);
+}
+.our-Program-HotelManagement-img {
+	transform: translateX(50px);
+}
+
+.show {
+	transform: translate(0);
+	opacity: 1;
+}
+
+/* ================== BUTTON ================== */
+
+.prev-button,
+.next-button {
+	position: relative;
+	font-size: 1rem;
+	margin: 1rem;
+	width: 5rem;
+	background-color: brown;
+	color: azure;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.prev-button::before,
+.next-button::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	background-color: blue;
+	z-index: -1;
+	transition: width 0.5s ease;
+}
+
+.prev-button:hover::before,
+.next-button:hover::before {
+	width: 100%;
+}
+
+/* ================== SLIDER ================== */
+
+.bootscamp-slider {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.BootsCamp-img-slider-small {
+	padding: 1rem;
+	border-radius: 50%;
+	height: 10rem;
+	width: 15rem;
+	transition:
+		transform 5s ease,
+		opacity 5s ease;
+}
+
+.BootsCamp-img-slider-big {
+	padding: 1rem;
+	height: 15rem;
+	width: 20rem;
+	border-radius: 50%;
+	transition: transform 5s ease;
+}
+
+/* ================== REVIEWS ================== */
+
+.student-review-div {
+	margin-top: 2rem;
+}
+
+.review-card {
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+}
+.OurProgram-Link-Button {
+	text-decoration: none;
+	color: black;
+	font-size: 0.8rem;
+	font-weight: 800;
+}
+/* ================== RESPONSIVE ================== */
+
+@media (max-width: 576px) {
+}
+
+@media (min-width: 768px) {
+	.our-Program-Science-img,
+	.our-Program-Management-img,
+	.our-Program-HotelManagement-img {
+		width: 15rem;
+		height: 15rem;
+	}
+
+	.bootscamp-slider {
+		margin-top: 5rem;
+	}
+
+	.BootsCamp-img-slider-big {
+		width: 17rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.our-Program-container {
+		margin-top: 2rem;
+	}
+
+	.bootscamp-slider {
+		justify-content: space-evenly;
+	}
+}

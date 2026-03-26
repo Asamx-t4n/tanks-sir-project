@@ -1,0 +1,56 @@
+.login-container {
+	background: white;
+}
+
+.login-card {
+	margin-top: -9rem;
+	background: #fff;
+	padding: 2rem;
+	border-radius: 12px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.login-logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	margin-bottom: 1rem;
+}
+
+.login-title {
+	text-align: center;
+	font-weight: 700;
+	margin-bottom: 1.5rem;
+}
+
+.form-control {
+	border-radius: 8px;
+	padding: 10px;
+}
+
+.login-btn {
+	background: brown;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 8px;
+	font-weight: 600;
+	transition: 0.3s;
+}
+
+.login-btn:hover {
+	background: #5a0000;
+}
+
+.login-footer {
+	text-align: center;
+	margin-top: 1rem;
+	font-size: 0.9rem;
+}
+
+.login-footer span {
+	color: brown;
+	font-weight: 600;
+	cursor: pointer;
+}
